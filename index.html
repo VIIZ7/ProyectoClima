@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>App-clima</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <main class="card">
+        <h1>Clima </h1>
+
+        <div class="controls">
+            <input id="cityInput" type="text" placeholder="Ej: Monterrey, MX" />
+            <button id="searchBtn">Buscar</button>
+        </div>
+
+        <div id="result" class="hidden">
+            <div class="location">
+                <h2 id="locName"></h2>
+                <img id="weatherIcon" alt="icono clima" />
+            </div>
+
+            <div class="details">
+                <p><strong>Temperatura:</strong> <span id="temp"></span></p>
+                <p><strong>Descripción:</strong> <span id="desc"></span></p>
+                <p><strong>Humedad:</strong> <span id="humidity"></span></p>
+                <p><strong>Viento:</strong> <span id="wind"></span></p>
+            </div>
+        </div>
+
+        <p id="msg" class="msg"></p>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
